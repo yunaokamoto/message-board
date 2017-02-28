@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'messages/index'
-
-  get 'messages/index'
+  root to: 'messages#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -57,10 +55,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
-Rails.application.routes.draw do
-  get 'messages/index'
-end
-Rails.application.routes.draw do
- root 'messages#index'
 end
