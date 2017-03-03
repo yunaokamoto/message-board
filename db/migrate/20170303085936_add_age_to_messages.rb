@@ -1,12 +1,6 @@
-class CreateMessages < ActiveRecord::Migration
+class AddAgeToMessages < ActiveRecord::Migration
   def change
-    create_table :messages do |t|
-      t.string :name
-      t.string :age
-      t.string :body
-
-      t.timestamps null: false
-    end
+    add_column :messages, :age, :integer
   end
 end
 
